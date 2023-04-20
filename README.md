@@ -14,7 +14,12 @@ match keywords() function checks for keywords that are present in both the origi
 dictionary_with_weights(words) is used to assign weights to the POS 
 
   nouns are given weightage as 9
+  
   proper nouns are given weightage as 8.5
+  
   adjectives are given weightage as 5
 
 Finally scoring is done and the student is given a score based on the presence of keywords and the score is appended to the dataframe (df)
+
+If you do not have a spreadsheet with all the student answer and only want to match one text with another, store both these texts as a string
+Remove the for loop in the final scoring part of the program
